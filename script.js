@@ -16,7 +16,7 @@ function addTask() {
     taskItem.appendChild(deleteBtn);
     taskList.appendChild(taskItem);
 
-    taskText.textContent = '';
+    inputField.value = '';
 
     deleteBtn.addEventListener('click', function () {
         taskItem.remove();
