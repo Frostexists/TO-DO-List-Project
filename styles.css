@@ -1,3 +1,11 @@
+:root {
+    --color-primary: #000;
+    --color-secondary: #00d9ff;
+    --color-accent: #FF0000;
+    --color-badge: #E4BC7C;
+}
+
+
 body {
     font-family: Inter, Arial, Helvetica, sans-serif;
 }
