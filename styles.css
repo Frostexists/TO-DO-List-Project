@@ -5,6 +5,8 @@
     --color-badge: #E4BC7C;
 }
 
+/* Typography */
+
 html {
     font-size: 62.5%;
 }
@@ -35,3 +37,11 @@ h2 {
         font-size: 2.5rem;
     }
 }
+
+
+/* Links */
+
+a {
+    text-decoration: none;
+}
+
