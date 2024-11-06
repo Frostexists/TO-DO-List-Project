@@ -45,3 +45,15 @@ a {
     text-decoration: none;
 }
 
+
+
+/* Lists */
+
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list__item {
+    margin-bottom: 6rem;
+}
