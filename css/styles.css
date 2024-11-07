@@ -8,7 +8,7 @@
 *, 
 *::after, 
 *::before {
-    box-sizing: border-boxs;
+    box-sizing: border-box;
 }
 
 
@@ -81,8 +81,34 @@ a {
 
 .btn--primary {
     background-color: var(--color-primary);
+    border-radius: 25px;
 }
 
 .btn--primary:hover {
     background: #00c3e6
+}
+
+
+/* Inputs */
+
+.input {
+    padding: 1.5rem 3rem;
+    border: 1px solid #cccccc;
+    border-radius: 25px;
+    outline: 0;
+}
+
+.input-group {
+    border: 1px solid #cccccc;
+    border-radius: 25px;
+    display: flex;
+}
+
+.input-group input {
+    border: 0;
+    flex-grow: 1;
+}
+
+.input-group .btn {
+    margin: 4px;
 }
