@@ -1,9 +1,16 @@
 :root {
-    --color-primary: #000;
-    --color-secondary: #00d9ff;
+    --color-primary: #00d9ff;
     --color-accent: #FF0000;
     --color-badge: #E4BC7C;
 }
+
+
+*, 
+*::after, 
+*::before {
+    box-sizing: border-boxs;
+}
+
 
 /* Typography */
 
@@ -56,4 +63,26 @@ a {
 
 .list__item {
     margin-bottom: 6rem;
+}
+
+
+/* Buttons */
+
+.btn {
+    border-radius: 40px;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 2rem 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+}
+
+.btn--primary:hover {
+    background: #00c3e6
 }
