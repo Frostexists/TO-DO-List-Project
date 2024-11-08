@@ -141,3 +141,15 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    border-bottom: 5px solid #000000;
+}
