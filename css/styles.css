@@ -122,3 +122,22 @@ a {
     padding: 0.5rem 1rem;
     border-radius: 50px;
 }
+
+
+
+/* Icons */
+
+.icon {
+    width: 92px;
+    height: 92px;
+}
+
+.icon-container {
+    background: #fbf7f5;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
