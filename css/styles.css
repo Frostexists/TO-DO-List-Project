@@ -56,13 +56,76 @@ a {
 
 /* Lists */
 
-.list {
+/* .list {
     list-style: none;
     padding-left: 0;
 }
 
-.list__item {
+.list__item{
     margin-bottom: 6rem;
+    display: flex; 
+    justify-content: space-between;
+} */
+
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+/* Style for each list item */
+.list__item {
+    display: flex;
+    align-items: center;
+    /* Vertically aligns all elements */
+    justify-content: space-between;
+    /* Spreads elements across */
+    padding: 14px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Reduce space between list items */
+.list__item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+/* Fixed width for the task index */
+.task-index {
+    flex: 0 0 30px;
+    /* Ensures all indices align consistently */
+    text-align: center;
+}
+
+/* Task description takes up remaining space */
+.task-desc {
+    flex: 1;
+    margin-left: 10px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+/* Buttons alignment */
+.edit-btn,
+.delete-btn {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* Ensures vertical alignment */
+    justify-content: center;
+    padding: 0;
+}
+
+/* Add space between the two buttons */
+.edit-btn {
+    margin-right: 10px;
+    /* Controls spacing between the edit and delete buttons */
 }
 
 
@@ -89,28 +152,28 @@ a {
 }
 
 
-/* Inputs */
 
-.input {
-    padding: 1.5rem 3rem;
-    border: 1px solid #cccccc;
-    border-radius: 25px;
-    outline: 0;
-}
+/* Inputs */
 
 .input-group {
     border: 1px solid #cccccc;
     border-radius: 25px;
+    outline: 0;
     display: flex;
+    margin: 0 5rem;
 }
 
-.input-group input {
+.input-field {
     border: 0;
     flex-grow: 1;
 }
 
 .input-group .btn {
     margin: 4px;
+}
+
+.input-field:focus {
+    outline: none;
 }
 
 
