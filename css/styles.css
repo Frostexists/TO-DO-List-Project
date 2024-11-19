@@ -24,24 +24,27 @@ body {
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 2.9rem;
+    margin-top: 2.3rem;
+    margin-bottom: 2rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 @media screen and (min-width: 1024px) {
     body {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     h1 {
-        font-size: 5.5rem;
+        font-size: 4.8rem;
+        margin-top: 3.5rem;
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -84,18 +87,19 @@ a {
     /* Vertically aligns all elements */
     justify-content: space-between;
     /* Spreads elements across */
-    padding: 14px 15px;
+    padding: 12px 5px;
     border-bottom: 1px solid #ddd;
 }
 
 /* Reduce space between list items */
 .list__item:not(:last-child) {
-    margin-bottom: 1rem;
+    margin: 2.4rem 0;
 }
 
 /* Fixed width for the task index */
 .task-index {
     flex: 0 0 30px;
+    font-weight: 540;
     /* Ensures all indices align consistently */
     text-align: center;
 }
@@ -104,7 +108,7 @@ a {
 .task-desc {
     flex: 1;
     margin-left: 10px;
-    text-align: left;
+    text-align: center;
     word-wrap: break-word;
 }
 
@@ -113,7 +117,7 @@ a {
 .delete-btn {
     border: none;
     background: none;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -129,6 +133,22 @@ a {
 }
 
 
+@media screen and (min-width: 1024px) {
+    .list__item {
+        padding: 2rem 0;
+    }
+    
+    .list__item:not(:last-child) {
+        margin: 4.3rem 0;
+    }
+
+    .edit-btn,
+    .delete-btn {
+        font-size: 21px;
+    }
+}
+
+
 /* Buttons */
 
 .btn {
@@ -136,7 +156,8 @@ a {
     border: 0;
     color: #ffffff;
     cursor: pointer;
-    padding: 2rem 4rem;
+    font-size: 1rem;
+    padding: 2rem 3rem;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -156,11 +177,10 @@ a {
 /* Inputs */
 
 .input-group {
-    border: 1px solid #cccccc;
+    border: 2px solid #000000;
     border-radius: 25px;
     outline: 0;
     display: flex;
-    margin: 0 5rem;
 }
 
 .input-field {
@@ -169,13 +189,30 @@ a {
 }
 
 .input-group .btn {
-    margin: 4px;
+    margin: 1px;
 }
 
 .input-field:focus {
     outline: none;
 }
 
+
+@media screen and (min-width: 1024px) {
+    .input-group {
+        margin: 8rem 2rem;
+    }
+    
+    .input-field {
+        font-size: 1.6rem;
+        padding-left: 1rem;
+        font-weight: 545;
+    }
+
+    .input-group .btn {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
 
 /* Badges */
 
@@ -184,6 +221,7 @@ a {
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 50px;
+    margin-left: 0.3rem;
 }
 
 
@@ -215,6 +253,7 @@ a {
     align-items: center;
     padding: 0 2rem;
     border-bottom: 5px solid #000000;
+    margin-top: 4rem;
 }
 
 
