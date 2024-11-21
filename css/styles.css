@@ -24,9 +24,9 @@ body {
 }
 
 h1{
-    font-size: 2.9rem;
+    font-size: 3rem;
     margin-top: 2.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.6rem;
 }
 
 h2 {
@@ -219,31 +219,50 @@ a {
 .badge {
     background-color: var(--color-badge);
     font-weight: bold;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 50px;
     margin-left: 0.3rem;
+    margin-bottom: 4rem;
+    align-self: flex-start;
 }
 
 
+.badge-icon-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+    .badge {
+        padding: 0.5rem 1rem;
+        margin-bottom: 3rem;
+    }
+}
 
 /* Icons */
 
 .icon {
-    width: 92px;
-    height: 92px;
+    width: 70px;
+    height: 70px;
 }
 
 .icon-container {
     background: #fbf7f5;
-    width: 130px;
-    height: 130px;
-    border-radius: 100%;
-    display: inline-flex;
+    border-radius: 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    align-self: center;
+    margin-bottom: 4rem;
 }
 
-
+@media screen and (min-width: 1024px) {
+    .icon {
+        width: 92px;
+        height: 92px;
+    }
+}
 
 /* Header */
 
@@ -253,7 +272,12 @@ a {
     align-items: center;
     padding: 0 2rem;
     border-bottom: 5px solid #000000;
-    margin-top: 4rem;
+    margin-top: 1.8rem;
 }
 
 
+@media screen and (min-width: 1024px) {
+    .header {
+    margin-top: 4rem;
+    }
+}
